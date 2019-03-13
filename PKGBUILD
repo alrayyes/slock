@@ -10,14 +10,18 @@ license=('MIT')
 depends=('libxext' 'libxrandr')
 source=("http://dl.suckless.org/tools/$pkgname-$pkgver.tar.gz")
 #source=("slock-$pkgver.tar.bz2::http://hg.suckless.org/slock/archive/$_pkgver.tar.gz")
-md5sums=('f91dd5ba50ce7bd1842caeca067086a3'
-         '76c1d90cfb0a1da62a00caec951f48f7'
-         '2afeace988ef4eaf0a8a078aded7c4a0')
-sha256sums=('b53849dbc60109a987d7a49b8da197305c29307fd74c12dc18af0d3044392e6a'
-            '209c5e9954f38f6dae8cc32f7c79bc0351eee5210f943912d1ff0c7a305a355c'
-            '0d5508c24ab2e870f1d807044c08c7c4f835e696267ecca7521b08f59bc803d1')
 
-_patches=("slock-dpms-20170923-fa11589.diff")
+sha256sums=('b53849dbc60109a987d7a49b8da197305c29307fd74c12dc18af0d3044392e6a'
+            '97c09fd6f7e0aff3002a24dabe57798bcfaa1467a043cf7b7119177f005e5848'
+            '0d5508c24ab2e870f1d807044c08c7c4f835e696267ecca7521b08f59bc803d1'
+            'e4f1401e0f6a2615e3c1a6ab204e84b83917388d77247c311bf7902f1245b373')
+
+_patches=("slock-dpms-20170923-fa11589.diff"
+          "local-quickcancel-20160619-65b8d52.diff"
+          #"slock-message-20180626-35633d4.diff"
+          #"slock-mediakeys-20170111-2d2a21a.diff"
+          #"slock-1.2-background-image.diff"
+        )
 
 source=("http://dl.suckless.org/st/$pkgname-$pkgver.tar.gz"
         "config.h"
