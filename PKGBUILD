@@ -1,5 +1,4 @@
-# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
-# Contributor: Sebastian A. Liem <sebastian at liem dot se>
+# Maintainer: Ryan Kes <alrayyes@gmail.com>
 
 pkgname=slock
 pkgver=1.4
