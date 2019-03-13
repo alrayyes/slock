@@ -1,0 +1,33 @@
+diff -up a/slock.c b/slock.c
+--- a/slock.c
++++ b/slock.c
+@@ -18,6 +18,7 @@
+ #include <X11/extensions/Xrandr.h>
+ #include <X11/extensions/dpms.h>
+ #include <X11/keysym.h>
++#include <X11/XF86keysym.h>
+ #include <X11/Xlib.h>
+ #include <X11/Xutil.h>
+ 
+@@ -180,6 +181,21 @@ readpw(Display *dpy, struct xrandr *rr,
+ 				explicit_bzero(&passwd, sizeof(passwd));
+ 				len = 0;
+ 				break;
++			case XF86XK_AudioRaiseVolume:
++				XSendEvent(dpy, DefaultRootWindow(dpy), True, KeyPressMask, &ev);
++				break;
++			case XF86XK_AudioLowerVolume:
++				XSendEvent(dpy, DefaultRootWindow(dpy), True, KeyPressMask, &ev);
++				break;
++			case XF86XK_AudioMute:
++				XSendEvent(dpy, DefaultRootWindow(dpy), True, KeyPressMask, &ev);
++				break;
++			case XF86XK_MonBrightnessUp:
++				XSendEvent(dpy, DefaultRootWindow(dpy), True, KeyPressMask, &ev);
++				break;
++			case XF86XK_MonBrightnessDown:
++				XSendEvent(dpy, DefaultRootWindow(dpy), True, KeyPressMask, &ev);
++				break;
+ 			case XK_BackSpace:
+ 				if (len)
+ 					passwd[len--] = '\0';
