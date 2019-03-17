@@ -9,7 +9,6 @@ url="http://tools.suckless.org/slock"
 license=('MIT')
 depends=('libxext' 'libxrandr')
 source=("http://dl.suckless.org/tools/$pkgname-$pkgver.tar.gz")
-#source=("slock-$pkgver.tar.bz2::http://hg.suckless.org/slock/archive/$_pkgver.tar.gz")
 
 sha256sums=('b53849dbc60109a987d7a49b8da197305c29307fd74c12dc18af0d3044392e6a'
             '97c09fd6f7e0aff3002a24dabe57798bcfaa1467a043cf7b7119177f005e5848'
