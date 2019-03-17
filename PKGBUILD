@@ -19,8 +19,6 @@ sha256sums=('b53849dbc60109a987d7a49b8da197305c29307fd74c12dc18af0d3044392e6a'
 _patches=("slock-dpms-20170923-fa11589.diff"
           "local-quickcancel-20160619-65b8d52.diff"
           "local-mediakeys-20170111-2d2a21a.diff"
-          #"slock-message-20180626-35633d4.diff"
-          #"slock-1.2-background-image.diff"
         )
 
 source=("http://dl.suckless.org/st/$pkgname-$pkgver.tar.gz"
