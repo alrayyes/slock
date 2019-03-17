@@ -4,6 +4,7 @@
 
 + [mediakeys](https://tools.suckless.org/slock/patches/mediakeys/)
 + [quickcancel](https://tools.suckless.org/slock/patches/quickcancel/)
++ [dpms](https://tools.suckless.org/slock/patches/dpms/)
 
 ## Installation
 
