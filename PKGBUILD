@@ -21,7 +21,7 @@ _patches=("slock-dpms-20170923-fa11589.diff"
           "local-mediakeys-20170111-2d2a21a.diff"
         )
 
-source=("http://dl.suckless.org/st/$pkgname-$pkgver.tar.gz"
+source=("http://dl.suckless.org/tools/$pkgname-$pkgver.tar.gz"
         "config.h"
         "${_patches[@]}")
 
