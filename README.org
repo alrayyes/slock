@@ -1,0 +1,26 @@
+* My Slock Build
+:PROPERTIES:
+:CUSTOM_ID: my-slock-build
+:END:
+
+[[https://tools.suckless.org/slock/][Slock ]][[https://www.archlinux.org/][Arch]] package with a few patches installed to keep things nice:
+
+- [[https://tools.suckless.org/slock/patches/mediakeys/][mediakeys]]
+- [[https://tools.suckless.org/slock/patches/quickcancel/][quickcancel]]
+- [[https://tools.suckless.org/slock/patches/dpms/][dpms]]
+
+** Installation
+:PROPERTIES:
+:CUSTOM_ID: installation
+:END:
+
+#+BEGIN_SRC shell
+makepkg -si
+#+END_SRC
+
+** License
+:PROPERTIES:
+:CUSTOM_ID: license
+:END:
+
+This theme is released under the MIT License. For more information read the [[file:LICENSE.org][license]].
